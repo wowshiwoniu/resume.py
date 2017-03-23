@@ -7,7 +7,7 @@ def colored_message(message):
 
 class Resume:
     def __str__(self):
-        return '高久力的简历'
+        return '***的简历'
 
     def show(self):
         print(colored_message('基本信息:'))
@@ -38,7 +38,7 @@ class Resume:
 
     @property
     def basic(self):
-        return [('name', '高久力'),
+        return [('name', '***'),
                 ('sex', '男'),
                 ('birthday', '1993'),
                 ('phone', '176*********'),
@@ -52,11 +52,11 @@ class Resume:
         return [('school', '西南交通大学'),
                 ('degree', '本科'),
                 ('period', '2012.09 - 2016.06'),
-                ('major', '材料成型及控制工程')]
+                ('major', '材料工程')]
 
     @property
     def career(self):
-        return [(('company', '四川锦衣卫科技有限公司'),
+        return [(('company', '四川科技有限公司'),
                  ('period', '2016.07 - 至今'),
                  ('position', 'Python开发工程师'),
                  ('duty', '服务器架构,数据库设计,接口设计,接口开发,文档编写,接口测试,爬虫编写,服务器运维'))]
